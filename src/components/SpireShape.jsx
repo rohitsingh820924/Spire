@@ -27,17 +27,17 @@ const SpireShape = () => {
       x: '-50%',
       scrollTrigger: {
         trigger: '#section3',
-        start: "top bottom", 
-        end: "center center",
+        start: "+=0", 
+        end: "+=500",
         scrub: true,
       },
     });
 
     const moveRight = gsap.to(svgRef.current, {
-      x: '100%',
+      x: '0',
       scrollTrigger: {
         trigger: '#section4',
-        start: "top bottom", 
+        start: "+=1000", 
         end: "center center",
         scrub: true,
       },
@@ -45,10 +45,9 @@ const SpireShape = () => {
 
     const moveCenter = gsap.to(svgRef.current, {
       x: '0%',
-      scale: '0.5',
       scrollTrigger: {
         trigger: '#section5',
-        start: "top bottom", 
+        start: "+=1500", 
         end: "center center",
 
         scrub: true,

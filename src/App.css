@@ -4,7 +4,7 @@
   left: calc(50% - 20vw);
   top: calc(50% - 20vw);
   aspect-ratio: 1;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 
 .spire-animation {
@@ -144,3 +144,10 @@
   width: 100%;
   height: 100%;
 } */
+
+.container-tab {
+	width: 400%;
+	height: 100vh;
+	display: flex;
+	flex-wrap: nowrap;
+}

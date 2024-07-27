@@ -12,6 +12,7 @@ import React, { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Observer } from 'gsap/Observer';
+import TabsScroll from './components/TabsScroll'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -124,35 +125,35 @@ useEffect(() => {
   const scrollTrigger1 = ScrollTrigger.create({
       trigger: "#section1",
       pin: "#section1",
-      start: "top top",
+      start: "center center",
       end: "+=500",
   });
 
   const scrollTrigger2 = ScrollTrigger.create({
     trigger: "#section2",
     pin: "#section2",
-    start: "top top",
+    start: "center center",
     end: "+=500",
 });
 
 const scrollTrigger3 = ScrollTrigger.create({
   trigger: "#section3",
   pin: "#section3",
-  start: "top top",
+  start: "center center",
   end: "+=500",
 });
 
 const scrollTrigger4 = ScrollTrigger.create({
   trigger: "#section4",
   pin: "#section4",
-  start: "top top",
+  start: "center center",
   end: "+=500",
 });
 
 const scrollTrigger5 = ScrollTrigger.create({
   trigger: "#section5",
   pin: "#section5",
-  start: "top top",
+  start: "center center",
   end: "+=500",
 });
 
@@ -174,7 +175,8 @@ const scrollTrigger5 = ScrollTrigger.create({
       <div className="spire-container">
         <Banner />
         <Success />
-        <Tabs />
+        {/* <Tabs /> */}
+        <TabsScroll/>
         <Trusted />
         <Security />
         <Customer />

@@ -3,7 +3,7 @@ import Logo from '../assets/spire-logo.svg'
 
 const Header = () => {
   return (
-    <header className='bg-white fixed w-full top-0 z-10'>
+    <header className='bg-white sticky w-full top-0 z-10'>
       <div className="top-header bg-gary-bg text-gray-txt text-xs">
         <div className="container p-3">
           <div className='flex justify-between items-center'>
