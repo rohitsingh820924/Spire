@@ -7,12 +7,16 @@ import SpireShape from "./components/SpireShape"
 import Success from "./components/Success"
 import Tabs from './components/Tabs'
 import Trusted from './components/Trusted'
+import Spire3d from './components/Spire3d'
+import TabsScroll from './components/TabsScroll'
+import Discover from './components/Discover'
+import Connect from './components/Connect'
 
 import React, { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Observer } from 'gsap/Observer';
-import TabsScroll from './components/TabsScroll'
+import Footer from './components/Footer'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -122,38 +126,66 @@ function App() {
 // }, []); // Empty dependency array ensures this runs once on mount
 
 useEffect(() => {
-  const scrollTrigger1 = ScrollTrigger.create({
-      trigger: "#section1",
-      pin: "#section1",
-      start: "center center",
-      end: "+=500",
-  });
+  // const scrollTrigger1 = ScrollTrigger.create({
+  //     trigger: "#section1",
+  //     pin: "#section1",
+  //     start: "center center",
+  //     end: "+=500",
+  // });
 
   const scrollTrigger2 = ScrollTrigger.create({
     trigger: "#section2",
     pin: "#section2",
-    start: "center center",
+    start: "top 107",
     end: "+=500",
 });
 
 const scrollTrigger3 = ScrollTrigger.create({
   trigger: "#section3",
   pin: "#section3",
-  start: "center center",
+  start: "top 107",
   end: "+=500",
 });
 
 const scrollTrigger4 = ScrollTrigger.create({
   trigger: "#section4",
   pin: "#section4",
-  start: "center center",
+  start: "top 107",
   end: "+=500",
 });
 
 const scrollTrigger5 = ScrollTrigger.create({
   trigger: "#section5",
   pin: "#section5",
-  start: "center center",
+  start: "top 107",
+  end: "+=500",
+});
+
+const scrollTrigger6 = ScrollTrigger.create({
+  trigger: "#section6",
+  pin: "#section6",
+  start: "top 107",
+  end: "+=500",
+});
+
+const scrollTrigger7 = ScrollTrigger.create({
+  trigger: "#section7",
+  pin: "#section7",
+  start: "top 107",
+  end: "+=500",
+});
+
+const scrollTrigger8 = ScrollTrigger.create({
+  trigger: "#section8",
+  pin: "#section8",
+  start: "top 107",
+  end: "+=500",
+});
+
+const scrollTrigger9 = ScrollTrigger.create({
+  trigger: "#section9",
+  pin: "#section9",
+  start: "top 107",
   end: "+=500",
 });
 
@@ -164,6 +196,10 @@ const scrollTrigger5 = ScrollTrigger.create({
       scrollTrigger3.kill();
       scrollTrigger4.kill();
       scrollTrigger5.kill();
+      scrollTrigger6.kill();
+      scrollTrigger7.kill();
+      scrollTrigger8.kill();
+      scrollTrigger9.kill();
   };
 }, []);
 
@@ -171,15 +207,19 @@ const scrollTrigger5 = ScrollTrigger.create({
   return (
     <>
       <Header />
+      {/* <Spire3d /> */}
       <SpireShape />
       <div className="spire-container">
         <Banner />
         <Success />
-        {/* <Tabs /> */}
-        <TabsScroll/>
+        <Tabs />
+        {/* <TabsScroll/> */}
         <Trusted />
         <Security />
         <Customer />
+        <Discover />
+        <Connect />
+        <Footer />
       </div>
       
     </>

@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #ffffff;
+  background: linear-gradient(90deg, #E1E1EC 100%, #ECEFF6 59.11%, #FAFAFA 0%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,10 +26,15 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background: linear-gradient(90deg, #E1E1EC 100%, #ECEFF6 59.11%, #FAFAFA 0%);
   color: #000000;
 }
 
 .container {
   margin: auto;
+  padding: 20px;
+}
+
+footer .container {
+  margin: 0 auto;
 }

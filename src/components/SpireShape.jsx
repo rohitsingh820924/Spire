@@ -34,20 +34,54 @@ const SpireShape = () => {
     });
 
     const moveRight = gsap.to(svgRef.current, {
-      x: '0',
+      x: '150%',
       scrollTrigger: {
         trigger: '#section4',
-        start: "+=1000", 
+        start: "+=500", 
         end: "center center",
         scrub: true,
       },
     });
 
-    const moveCenter = gsap.to(svgRef.current, {
+    const move6 = gsap.to(svgRef.current, {
       x: '0%',
+      scale: 1,
       scrollTrigger: {
         trigger: '#section5',
+        start: "+=500", 
+        end: "center center",
+
+        scrub: true,
+      },
+    });
+
+    const moveCenter = gsap.to(svgRef.current, {
+      x: '70%',
+      scrollTrigger: {
+        trigger: '#section6',
+        start: "+=1000", 
+        end: "center center",
+
+        scrub: true,
+      },
+    });
+  
+    const move7 = gsap.to(svgRef.current, {
+      x: '150%',
+      scrollTrigger: {
+        trigger: '#section7',
         start: "+=1500", 
+        end: "center center",
+
+        scrub: true,
+      },
+    });
+    const move8 = gsap.to(svgRef.current, {
+      x: '0%',
+      y: '-50%',
+      scrollTrigger: {
+        trigger: '#section8',
+        start: "+=2000", 
         end: "center center",
 
         scrub: true,
@@ -69,6 +103,9 @@ const SpireShape = () => {
       moveLeft.kill();
       moveRight.kill();
       moveCenter.kill();
+      move6.kill();
+      move7.kill();
+      move8.kill();
     };
   }, []);
   

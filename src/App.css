@@ -4,7 +4,7 @@
   left: calc(50% - 20vw);
   top: calc(50% - 20vw);
   aspect-ratio: 1;
-  /* transition: all 0.3s ease; */
+  transition: all 1s ease;
 }
 
 .spire-animation {
@@ -150,4 +150,35 @@
 	height: 100vh;
 	display: flex;
 	flex-wrap: nowrap;
+}
+
+.scroll-section-outer {
+  overflow: hidden;
+}
+
+.scroll-section-inner {
+  height: 100vh;
+  width: 300vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-section h3 {
+  color: var(--primaryTextColor);
+  letter-spacing: var(--headlineMedium);
+  font-size: var(--headlineMedium);
+  text-transform: uppercase;
+}
+
+.h-svh {
+  height: calc(100svh - 107px) !important;
 }
